@@ -1,0 +1,191 @@
+:root {
+    --Orange: hsl(26, 100%, 55%);
+    --Paleorange: hsl(25, 100%, 75%);
+    --Verydarkblue: hsl(220, 13%, 13%);
+    --Darkgrayishblue: hsl(219, 9%, 45%);
+    --Grayishblue: hsl(220, 14%, 75%);
+    --Lightgrayishblue: hsl(223, 64%, 98%);
+    --White: hsl(0, 0%, 100%);
+    --Black : hsl(0, 0%, 0%);
+}
+html{
+    font-size: 16px;
+}
+.navbar {
+    padding: 0;
+
+}
+.navbar-brand{
+    color: var(--Darkgrayishblue);
+    padding: 0px;
+    margin: 0px;
+}
+.menubar{
+    width: 30rem;
+    justify-content: space-between;
+}
+.w-5r{
+    height: 5rem;
+}
+.w5r{
+    height: 5rem;
+}
+.w-5r:hover{
+    border-bottom: 5px solid var(--Orange) ;
+    color: #000;
+    cursor: pointer;
+}
+.w-5r:hover .navbar-brand{
+    color: #000;
+}
+.menu {
+    display: none;
+}
+.img-r1{
+    border-radius: 1rem;
+}
+.img-r2{
+    border-radius: 2rem;
+}
+.main-img{
+    width: 35rem;
+    height: 35rem;
+}
+.w-20{
+    width: 7rem;
+    height: 7rem;
+}
+button.def{
+    border: 0px;
+    background: var(--Lightgrayishblue);
+}
+.icon{
+    width: 2rem;
+    height: 2rem;
+}
+.mx-auto{
+    display: flex;
+    justify-content: center;
+}
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+.nomp{
+    margin: 0;
+    padding: 0;
+}
+.d-unset{
+    display: none !important;
+} 
+.row {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    margin-right: calc(var(--bs-gutter-x) * .5);
+    margin-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+}
+.d-block{
+    display: inline-block !important;
+}
+.market{
+    margin-left: 20rem;
+}
+.profile{
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid var(--Lightgrayishblue);
+    border-radius: 3rem;
+}
+.profile:hover{
+    border: 2px solid var(--Orange);
+}
+.number-maret{
+    font-size: 0.75rem;
+    position: relative;
+    right: 10px;
+    background: var(--Orange);
+    padding: 0rem 0.75rem;
+    border-radius: 2rem;
+    color: var(--White);
+}
+.headtext{
+    text-transform: uppercartse;
+    color: var(--Orange);
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+h1{
+    font-size: 3rem;
+}
+.subtext{
+    color: var(--Darkgrayishblue);
+}
+.btn{
+    border: 0px;
+}
+.dropdown-toggle::after {
+    content: unset;
+}
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    color: unset;
+    background-color: unset;
+    border-color: unset;
+}
+nav .container {
+    border-bottom: 1px solid var(--Grayishblue);
+}
+.dropdown-menu[data-bs-popper] {
+    width: 25rem;
+    top: 100%;
+    left: 9.2rem;
+    margin-top: calc(var(--bs-dropdown-spacer) - 10px) ;
+}
+.btn:first-child:hover, :not(.btn-check)+.btn:hover {
+    color: var(--Paleorange);
+    background-color: var(--Lightgrayishblue);
+}
+main{
+    margin-top: 7rem;
+}
+.c-dark{
+    color: var(--Black);
+    font-weight: 700;
+}
+.price{
+    font-size: 2rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+.price2{
+    font-weight: 700;
+    color: var(--Grayishblue);
+    text-decoration: line-through;
+}
+.sele{
+    font-size: 1rem;
+    color: var(--Orange);
+    background-color: var(--Paleorange);
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.5rem;
+    margin-left: 1rem;
+}
+.Orange{
+    color: var(--Orange);
+    font-size: 2rem;
+    padding: 0px;
+    font-weight: 700;
+}
+.bgOrange:hover{
+    background-color:var(--Paleorange) !important;
+}
+.bgOrange:active{
+    background-color:var(--Paleorange) !important;
+}
+.bgOrange{
+    background-color:var(--Orange);
+    color: var(--White) !important
+    ;
+}

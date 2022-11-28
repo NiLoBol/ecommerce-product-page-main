@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+  <script src="index.js" defer></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-light bg-light fixed-top ">
+    <div class="container-fluid container justify-content-start d-flex align-items-center pt-3 ">
+      <img class="me-5" src="images/logo.svg" alt="logo">
+      <div class="d-flex align-items-center menubar">
+        <div class="w-5r d-flex align-items-center"><a class="navbar-brand" href="#">Collections</a></div>
+        <div class="w-5r d-flex align-items-center"><a class="navbar-brand" href="#">Men</a></div>
+        <div class="w-5r d-flex align-items-center"><a class="navbar-brand" href="#">Women</a></div>
+        <div class="w-5r d-flex align-items-center"><a class="navbar-brand" href="#">About</a></div>
+        <div class="w-5r d-flex align-items-center"><a class="navbar-brand" href="#">Contact</a></div>
+      </div>
+
+      <div class="dropdown-center">
+        <button class="btn btn-secondary dropdown-toggle d-flex align-items-center def market w5r" type="button"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          <img class="icon" src="images/icon-cart.svg" alt="cart">
+          <p class="number-maret" id="nummarket">3</p>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#"><b>Cart</b></a></li>
+          <li>
+            <hr>
+          </li>
+          <li>
+            <div id="item" class="row mx-3 card-market-item ">
+              <img class="col-3 " src="images/image-product-1-thumbnail.jpg" alt="">
+              <div class="col-7 ">
+                Fall Limited Edition Sneakers
+                <p id="pricecal">$125.00 x 3 <b>$375.00</b></p>
+              </div>
+              <div class="col-1 nomp">
+                <button onclick="fdele()" type="button" class="btn scart">
+                  <img src="images/icon-delete.svg" alt="">
+                </button>
+              </div>
+            </div>
+          </li>
+          <li><button type="button" class="btn btn-primary bgOrange cart mx-auto mt-3">Add to cart</button></li>
+        </ul>
+      </div>
+      <button class="d-flex align-items-center def  ms-3 w5r">
+        <img class="profile" src="images/image-avatar.png" alt="cart">
+      </button>
+
+      <button class="navbar-toggler menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <img src="images/icon-menu.svg" alt="">
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="navbar-brand" href="#">Collections</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="#">Men</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="navbar-brand" href="#">Women</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="d-flex container">
+    <div class="m-5 w-50 ">
+      <img class="main-img img-r1" src="images/image-product-1.jpg" alt="">
+      <div class="d-flex justify-content-between align-items-center">
+        <img class="img-r1 w-20 mt-5" src="images/image-product-1-thumbnail.jpg" alt="">
+        <img class="img-r1 w-20 mt-5" src="images/image-product-2-thumbnail.jpg" alt="">
+        <img class="img-r1 w-20 mt-5" src="images/image-product-3-thumbnail.jpg" alt="">
+        <img class="img-r1 w-20 mt-5" src="images/image-product-4-thumbnail.jpg" alt="">
+      </div>
+    </div>
+    <div class="m-5 w-50 ">
+      <p class="headtext mb-3 mt-5">
+        Sneaker Company
+      </p>
+      <h1 class="mb-5"> Fall Limited Edition Sneakers</h1>
+
+      <p class="subtext">
+        These low-profile sneakers are your perfect casual wear companion. Featuring a
+        durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </p>
+      <p class="price">$125.00 <span class="sele">50%</span></p>
+      <p class="price2"> $250.00 </p>
+      <div class="d-flex mb-3">
+        <div class="d-flex me-5 py-0 btn btn-light d-flex justify-content-center align-items-center">
+          <button type="button" class="btn Orange fs-2 pb-2" onclick="f1()">-</button>
+          <p class="m-3 mx-5 fs-5 c-dark" id="valuenum">1</p>
+          <button type="button" class="btn Orange fs-2 pb-2" onclick="f2()">+</button>
+        </div>
+        <button type="button" onclick="f3()" class="btn btn-primary bgOrange cart">Add to cart</button>
+      </div>
+
+
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
