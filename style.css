@@ -320,7 +320,7 @@ main {
     background-color: var(--Orange);
     color: var(--White) !important;
 }
-@media (max-width:475px) {
+@media (max-width:500px) {
     main{
         margin-top: 4.2rem;
     }
